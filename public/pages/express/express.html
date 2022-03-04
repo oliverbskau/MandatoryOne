@@ -1,0 +1,135 @@
+<div class="headlineDiv">
+  <h1 class="headlineText">Node and Express</h1>
+</div>
+
+<div class="content">
+  <div class="topicDiv">
+  <h2 class="topicHeader">Scripts in package.json</h2>
+
+  <p>
+    "Scripts" in package.json is a shortcut definer for commands you can use in
+    the terminal.
+  </p>
+  <img src="/pages/express/package.json.png" />
+  <p>
+    The left side within the curlybrackets is the command. <br />
+    The right side is the actual input into the terminal. <br />
+    It is just like declaring a variable in js.
+  </p>
+  <p>If we do - "start": "nodemon.cmd app.js"</p>
+  <p>
+    Then i can run this website in the terminal just by typing "start" as a
+    command.
+  </p>
+  <p>That is actually a great idea! Lets do that:</p>
+  <img src="/pages/express/scripts.png" />
+
+  </div>
+  <div class="topicDiv">
+
+  <h2 class="topicHeader">Environment variables in Node</h2>
+
+  <p>
+    It's about defining variables in node, so you later can access them. For
+    example ( User=me node app.js )
+    <br />
+    process.env.User // "Me"
+  </p>
+  <p>I don't know how to put words into it. <br /></p>
+  <a
+    class="link"
+    href="https://nodejs.dev/learn/how-to-read-environment-variables-from-nodejs"
+    >More info: Node</a
+  >
+</div>
+<div class="topicDiv">
+  <h2 class="topicHeader">
+    Importing / Exporting with standard Node Module system
+  </h2>
+
+  <p>We can export and import variables in Node.js</p>
+  <p>Export in "export.js"</p>
+
+  <img src="/pages/express/export.png" />
+
+  <p>Import in "import.js"</p>
+  <img src="/pages/express/import.png" />
+
+  <p>The output of "Node import.js :</p>
+
+  <img src="/pages/express/outputmyvar.png" />
+
+  </div>
+  <div class="topicDiv">
+
+  <h2 class="topicHeader">Routers</h2>
+
+  <p>How do we define a router, using express?</p>
+
+  <img src="/pages/express/defrouter.png" />
+
+  <p>Now it can be used instead of "app." but now as "router."</p>
+
+  <img src="/pages/express/userouter.png" width="770px" height="450px" />
+
+  </div>
+  <div class="topicDiv">
+
+  <h2 class="topicHeader">
+    Routers - Redirection (Client-side vs. Server-side) (Dynamic vs. Static
+    redirection in frontend)
+  </h2>
+
+  <p>Server-side redirect</p>
+
+  <p>
+    Server Side Redirects A server side redirect happens, when the HTTP request
+    to a web server is answered with a server status code, which indicates the
+    requested document has moved to another URL. <br />
+    The client will then request the destination URL and the user gets
+    forwarded. <br />
+    There are several kinds of HTTP status codes (RFC 7231) that indicate a
+    redirect of a certain type. <br />
+    There are no good or bad redirect status codes. <br />
+    Each kind of redirect has a purpose and can be applied with positive
+    effects. If a search engine discovers a redirect, it has to decide how to
+    handle it. <br />
+    From a SEO perspective, there is one central question: Should link juice or
+    ranking signals be passed via the redirect? To make this decision, search
+    engines look at the status code used for the redirect and its technical
+    details.<br />
+    The following table shows the 30x status codes and their technical details
+    relevant in this context.
+  </p>
+
+  <p>client-side redirect</p>
+
+  <p>
+    A client side redirect is a direct forward to a destination URL. <br />
+    The client side redirect is induced by the client, e.g. browser, directly.
+    While server side redirects are the desirable way to implement redirects,
+    authors don't always have the opportunity to control server side redirects.
+    For this case, client side redirects can be a choice to forward a user or
+    have a document refreshed.
+  </p>
+</div>
+<div class="topicDiv">
+  <h2 class="topicHeader">CORS problems</h2>
+  <p>What is a CORS problem in Javascript?</p>
+
+  <p>
+    If the CORS configuration isn't setup correctly, the browser console will
+    present an error like "Cross-Origin Request Blocked: The Same Origin Policy
+    disallows reading the remote resource at $somesite" indicating that the
+    request was blocked due to violating the CORS security rules.
+  </p>
+
+  <p>How to solve the problems</p>
+  <p>
+    For example, if you want to solve this on the express. js then all you have
+    to do is use a certain middleware that will handle the origin key. But, for
+    any non-standard HTTP request like PUT, PATCH, DELETE, you'll have to
+    preflight them.
+  </p>
+  </div>
+</div>

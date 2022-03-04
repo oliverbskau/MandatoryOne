@@ -1,0 +1,25 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "description": "Mandatory assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverbskau/MandatoryOne.git"
+  },
+  "keywords": [
+    "SSR",
+    "Express"
+  ],
+  "author": "Oliver Skau",
+  "license": "KEA",
+  "bugs": {
+    "url": "https://github.com/oliverbskau/MandatoryOne/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

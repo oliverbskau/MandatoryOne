@@ -1,0 +1,47 @@
+<div class="headlineDiv">
+  <h1 class="headlineText">SSR</h1>
+</div>
+
+<div class="content">
+  <div class="topicDiv">
+    <h2 class="topicHeader">SSR</h2>
+    <p>
+      When we create a folder called public, we can have different html files in
+      that folder. They are static.
+    </p>
+    <img src="/pages/ssr/publicfolder.png" />
+    <p>When we use express, we can run it with the static folder</p>
+    <img src="/pages/ssr/expressstatic.png" />
+
+    <p>
+      Now we can use the public folder, as a pathway to get all the paths and
+      assign them to variables. In here we can glue html files together.
+    </p>
+
+    <img src="/pages/ssr/htmlglue.png" width="770px" />
+
+    <p>
+      This means that forexample the navigation bar at the top of this page, is
+      only created once, and glued to all of the html files, so the html code
+      doesen't have to be repeated for every html document.
+    </p>
+
+    <p>"nav.html"</p>
+
+    <img src="/pages/ssr/nav.png" width="770px" />
+
+    <p>"any body .html" this is this actual page as an example</p>
+    <img src="/pages/ssr/body.png" width="770px" />
+
+    <p>"footer.html"</p>
+    <img src="/pages/ssr/footer.png" width="770px" />
+
+    <p>
+      Now the pages get's connected to GET methods and the response is based on
+      the glued html file.
+    </p>
+
+    <img src="/pages/ssr/getmethods.png" width="770px" />
+  </div>
+
+</div>

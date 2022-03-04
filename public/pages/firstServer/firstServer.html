@@ -1,0 +1,91 @@
+<div class="headlineDiv">
+  <h1 class="headlineText">First Server</h1>
+</div>
+
+<div class="content">
+  <div class="topicDiv">
+  <h2 class="topicHeader">Callback functions</h2>
+
+  <p>What is a callback function?</p>
+  <p>
+    A JavaScript callback is a function which is to be executed after another
+    function has finished execution. A more formal definition would be - Any
+    function that is passed as an argument to another function so that it can be
+    executed in that other function is called as a callback function.
+  </p>
+  <p>Why callback functions?</p>
+  <p>
+    We need callback functions because many JavaScript actions are asynchronous,
+    which means they don't really stop the program (or a function) from running
+    until they're completed, as you're probably used to. Instead, it will
+    execute in the background while the rest of the code runs.
+  </p>
+  <p>
+    In this example, the function runs through an entire array before the new
+    values are assigned to the new array.
+  </p>
+  <img src="/pages/firstServer/callbackArrowFunction.png" />
+</div>
+<div class="topicDiv">
+  <h2 class="topicHeader">Clean code / Code conventions</h2>
+  <p>
+    To get "prettier" code, and to simply follow some simple code conventions,
+    we installed "Prettier - Code formatter". When the code is saved, the format
+    is changed so it becomes more nice and structured to look at.
+  </p>
+  <p>Other examples:</p>
+  <p>
+    Variables: lowercase first letter, otherwise camelcase - let
+    pointScoreTableAmount <br />
+    Constants: All uppercase - const PI
+  </p>
+
+  <p>
+    Clean code and code conventions are important, so that develpors worldwide
+    understand eachothers code. It is easier when we work together on the same
+    code, since we have the same set of rules when we write a function.
+  </p>
+  </div>
+  <div class="topicDiv">
+
+  <h2 class="topicHeader">Package.json</h2>
+
+  <p>What is packacge.json ?</p>
+
+  <p>
+    All npm packages contain a file, usually in the project root, called
+    package.json - this file holds various metadata relevant to the project.
+    Here we can declaire a lot of things such as dependensies or even "command
+    shortcuts" to be used in the terminal.
+  </p>
+
+  <img src="/pages/firstServer/package.json.png" />
+
+  <p>What does it do?</p>
+
+  <p>
+    It records important metadata about a project which is required before
+    publishing to NPM, and also defines functional attributes of a project that
+    npm uses to install dependencies, run scripts, and identify the entry point
+    to our package.
+  </p>
+</div>
+<div class="topicDiv">
+  <h2 class="topicHeader">Importing in Node.js</h2>
+
+  <p>
+    Example of export in one file, and importing from that file to another file:
+  </p>
+
+  <img src="/pages/firstServer/importExport.png"/>
+
+  </div>
+  <div class="topicDiv">
+
+  <h2 class="topicHeader">Body Parsing</h2>
+
+  <p>When we request the body of html file into the enpoint</p>
+
+  <img src="/pages/firstServer/reqbody.png"/>
+  </div>
+</div>
